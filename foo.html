@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+	<style>
+		.stage { margin: 0 auto; width: 980px; }
+		.stage .tout {
+			position: relative;
+		}
+		.stage .tout .description-wrapper {
+			background-color: green;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+		.stage .tout .description-wrapper  .description {
+			padding: 5px;
+			color: #FFF;
+			display: block;
+		}
+		.stage .main {
+			margin-bottom: 20px;
+		}
+		.stage .boxes ul {
+			list-style-type: none;
+			padding: 0px;
+			margin: 0px;
+			overflow: hidden;
+		}
+		.stage .boxes ul li {
+			float: left;
+			margin-left: 20px;
+			width: 300px;
+			height: 190px;
+		}
+		.stage .boxes ul li img {
+			width: 300px;
+			height: 190px;
+		}
+		@media screen and (max-width: 768px) {
+			.stage{
+				width: 100vw;
+			}
+			.stage .boxes ul li {
+				float: none;
+				margin: 0 auto;
+				width: 100%;
+			}
+			.stage .boxes ul li img {
+				width: 100%;
+				height: auto;
+			}
+			.stage .main .image-wrapper img {
+				width: 100%;
+				position: relative;
+			}
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="stage">
+
+		<div class="main tout">
+			<div class='image-wrapper'><img src="http://images.amcnetworks.com/amctv.com/wp-content/uploads/2015/03/comic-book-men-episode-413-walt-bryan-ming-mike-darryl-mcdaniels-980.jpg"></div>
+			<div class='description-wrapper'><span class="description">This is the Big Image</span></div>
+		</div>
+
+
+		<div class="boxes">
+			<ul>
+				<li class="tout">
+					<div class='image-wrapper'><img src="http://images.amcnetworks.com/ifc.com/wp-content/uploads/2015/12/quiz-fred-tout.jpg"></div>
+					<div class='description-wrapper'><span class="description">Sub Image 1</span></div>
+				</li>
+				<li class="tout">
+					<div class='image-wrapper'><img src="http://images.amcnetworks.com/sundancechannel.com/wp-content/uploads/2015/03/returned_marathon_tonight_hero.jpg"></div>
+					<div class='description-wrapper'><span class="description">Sub Image 2</span></div>
+				</li>
+				<li class="tout">
+					<div class='image-wrapper'><img src="http://images.amcnetworks.com/ifc.com/wp-content/uploads/2011/11/stream-movies-featured-tout-300x190.jpg"></div>
+					<div class='description-wrapper'><span class="description">Sub Image 3</span></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
