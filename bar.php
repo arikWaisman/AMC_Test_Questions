@@ -47,7 +47,7 @@ transportation TEXT NOT NULL,
 INDEX(name)
 );</p>
 
-<p>INSERT INTO travel_plans (name, transportation) VALUES ('Mary', 'car');</p>
+<p>INSERT INTO travel_plans (id, name, transportation) VALUES ('100', Mary', 'car');</p>
 
 <h1>Joining MYSQL tables third Question</h1>
 <p>SELECT * FROM person, travel_plans WHERE name='Mary';</p>
